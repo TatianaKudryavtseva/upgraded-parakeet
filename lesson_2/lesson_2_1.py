@@ -55,6 +55,7 @@ for i in range(int(last_page)):
                 salary_max = int(salary[2])
                 salary_currency = str(salary[3])
 
+            vacancy_data['site'] = url
             vacancy_data['name'] = name
             vacancy_data['href'] = href
             vacancy_data['salary_min'] = salary_min
