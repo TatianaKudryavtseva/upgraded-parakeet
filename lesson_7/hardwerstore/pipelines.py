@@ -40,11 +40,6 @@ class HardwerstorePipeline:
             lst_photo.append(photo['path'])
         return lst_photo
 
-    @staticmethod
-    def process_spec(spec_key, spec_value):
-        spec = dict(zip(spec_key, spec_value))
-        return spec
-
 
 class HardwerstorePhotosPipeline(ImagesPipeline):
     def get_media_requests(self, item, info):
